@@ -2,19 +2,19 @@
 
 These are the OpositaTest design tokens for web and app.
 
-The JSONs in this repository are formatted according to the [Style Dictionary][sd] guidelines. **Do not load it them directly**. [Style Dictionary][sd] gives possibilities to export them in multiple formats: JS modules, JSON, Sass, Less, etc. (See [formats](https://amzn.github.io/style-dictionary/#/formats))
+The JSONs in this repository are formatted according to the [Style Dictionary][sd] guidelines. **Do not load them directly**. Style Dictionary gives possibilities to export them in multiple formats: JS modules, JSON, Sass, Less, etc. (See [formats](https://amzn.github.io/style-dictionary/#/formats))
 
 * [Style Dictionary][sd]
 * [opositatest/design-tokens][repo]
 
 
 ## Getting started
-1. Install the package and the [Style Dictionary][sd] tool.
+### 1. Install the package and the [Style Dictionary][sd] tool.
 ```shell
 npm i -D @opositatest/design-tokens style-dictionary
 ```
 
-2. Create the configuration file (`style-dictionary.config.json`) according with your necessities.
+### 2. Create the configuration file (`style-dictionary.config.json`) according with your necessities.
 
 <details>
   <summary>Example for Sass:</summary>
@@ -59,7 +59,7 @@ npm i -D @opositatest/design-tokens style-dictionary
 
 </details>
 
-3. Export the design tokens with the command `style-dictionary build`
+### 3. Export the design tokens with the command `style-dictionary build`
 
 
 ## Changelog
