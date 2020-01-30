@@ -1,0 +1,36 @@
+# Package managers
+node_modules/
+package-lock.json
+
+# Cache
+.cache
+.sass-cache/
+.eslintcache
+.npm
+.env
+.stylelintcache
+
+# OS
+.directory
+.Trash-*
+.nfs*
+.DS_Store
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors
+.vscode/
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.vi
+*.zip
+*~

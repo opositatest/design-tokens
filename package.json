@@ -1,0 +1,20 @@
+{
+  "name": "design-tokens",
+  "version": "1.0.0-alpha.1",
+  "description": "OpositaTest design tokens",
+  "homepage": "https://github.com/opositatest/design-tokens#readme",
+  "bugs": "https://github.com/opositatest/design-tokens/issues",
+  "repository": "github:opositatest/design-tokens",
+  "files": [
+    "tokens/"
+  ],
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run test"
+  },
+  "author": "OpositaTest (https://opositatest.com/)",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

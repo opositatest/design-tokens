@@ -1,0 +1,14 @@
+{
+    "font": {
+        "family": {
+            "main": {"value": "'IBM Plex Sans'"}
+        },
+        "weight": {
+            "light": {"value": 300},
+            "text": {"value": 400},
+            "medium": {"value": 500},
+            "semibold": {"value": 600},
+            "bold": {"value": 700}
+        }
+    }
+}
