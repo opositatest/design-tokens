@@ -9,12 +9,12 @@ The JSONs in this repository are formatted according to the [Style Dictionary][s
 
 
 ## Getting started
-### 1. Install the package and the [Style Dictionary][sd] tool.
+**1. Install the package and the [Style Dictionary][sd] tool.**
 ```shell
 npm i -D @opositatest/design-tokens style-dictionary
 ```
 
-### 2. Create the configuration file (`style-dictionary.config.json`) according with your necessities.
+**2. Create the configuration file (`style-dictionary.config.json`) according with your necessities.**
 
 <details>
   <summary>Example for Sass:</summary>
@@ -59,7 +59,7 @@ npm i -D @opositatest/design-tokens style-dictionary
 
 </details>
 
-### 3. Export the design tokens with the command `style-dictionary build`
+**3. Export the design tokens with the command `style-dictionary build`**
 
 
 ## Changelog
