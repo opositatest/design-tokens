@@ -2,7 +2,7 @@ const spacing = require('../../tokens/properties/spacing.json');
 
 test('All spaces are numbers', () => {
     spacing.spacing.value.forEach(number => {
-        expect(typeof number).toBe('number')
+        expect(typeof number).toBe('number');
     });
 });
 
