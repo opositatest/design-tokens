@@ -1,4 +1,4 @@
-const color = require('../../tokens/properties/color.json');
+const color = require('../../properties/color.json');
 
 test('Exists most important colors', () => {
   expect(color.color.primary.main).toBeDefined();

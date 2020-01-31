@@ -1,4 +1,4 @@
-const font = require('../../tokens/properties/font.json');
+const font = require('../../properties/font.json');
 
 test('Exists a main font', () => {
   expect(font.font.family.main).toBeDefined();

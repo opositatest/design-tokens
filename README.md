@@ -21,7 +21,7 @@ npm i -D @opositatest/design-tokens style-dictionary
 
 ```json
 {
-  "source": ["./tokens/properties/*.json"],
+  "source": ["./properties/*.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",
@@ -43,7 +43,7 @@ npm i -D @opositatest/design-tokens style-dictionary
 
 ```json
 {
-  "source": ["./tokens/properties/*.json"],
+  "source": ["./properties/*.json"],
   "platforms": {
     "json": {
       "transformGroup": "js",
