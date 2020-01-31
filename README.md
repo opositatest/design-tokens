@@ -64,14 +64,13 @@ npm i -D @opositatest/design-tokens style-dictionary
 
 ## Changelog
 
-See [releases][odtr].
+See [releases][releases].
 This project use [Semantic Versioning][semver].
 
 
 
 
 [sd]: https://amzn.github.io/style-dictionary
-[odt]: https://github.com/opositatest/design-tokens/
-[odtr]: https://github.com/opositatest/design-tokens/releases
+[releases]: https://github.com/opositatest/design-tokens/releases
 [semver]: https://semver.org/
 [repo]: https://github.com/opositatest/design-tokens
