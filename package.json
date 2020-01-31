@@ -1,12 +1,13 @@
 {
   "name": "@opositatest/design-tokens",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "OpositaTest design tokens",
   "homepage": "https://github.com/opositatest/design-tokens#readme",
   "bugs": "https://github.com/opositatest/design-tokens/issues",
   "repository": "github:opositatest/design-tokens",
   "files": [
-    "tokens/"
+    "properties/",
+    "assets/"
   ],
   "scripts": {
     "test": "jest",
