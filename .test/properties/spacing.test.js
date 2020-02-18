@@ -1,4 +1,4 @@
-const spacing = require('../../properties/spacing.json');
+const spacing = require('../../src/properties/spacing.json');
 
 test('All spaces are numbers', () => {
     spacing.spacing.value.forEach(number => {
