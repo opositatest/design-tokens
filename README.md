@@ -2,71 +2,52 @@
 
 These are the OpositaTest design tokens for web and app.
 
-The JSONs in this repository are formatted according to the [Style Dictionary][sd] guidelines. **Do not load them directly**. Style Dictionary gives possibilities to export them in multiple formats: JS modules, JSON, Sass, Less, etc. (See [formats](https://amzn.github.io/style-dictionary/#/formats))
+The JSONs in this repository are formatted according to the [Style Dictionary][sd] guidelines. Style Dictionary gives possibilities to export them in multiple formats: JS modules, JSON, Sass, Less, etc. (See [formats](https://amzn.github.io/style-dictionary/#/formats))
 
 * [Style Dictionary][sd]
 * [opositatest/design-tokens][repo]
 
 
 ## Getting started
-**1. Install the package and the [Style Dictionary][sd] tool.**
+### 1. Install the npm package.
 ```shell
-npm i -D @opositatest/design-tokens style-dictionary
+npm i -D @opositatest/design-tokens
 ```
 
-**2. Create the configuration file (`style-dictionary.config.json`) according with your necessities.**
+### 2. Use the design tokens in JS or in Scss:
 
-<details>
-  <summary>Example for Sass:</summary>
+#### JS:
 
-```json
-{
-  "source": ["./node_modules/@opositatest/design-tokens/properties/**/*.json"],
-  "platforms": {
-    "scss": {
-      "transformGroup": "scss",
-      "buildPath": "./assets/scss/library/",
-      "files": [{
-      "destination": "_tokens.scss",
-      "format": "scss/variables",
-      }]
+```js
+const designToken = require('@opositatest/design-tokens')
+```
+
+
+#### Scss:
+
+1. Configure Scss to use files from `node_modules/`
+
+  ```js
+  options: {
+      includePaths: [ 'node_modules/' ]
     }
   }
+  ```
+
+2. Use it in a Scss file
+```scss
+@use '@opositatest/design-tokens/dist/token';
+
+.element {
+color: token.$color-neutral-dark-80;
 }
 ```
-
-</details>
-
-
-<details>
-  <summary>Example for JSON:</summary>
-
-```json
-{
-  "source": ["./node_modules/@opositatest/design-tokens/properties/**/*.json"],
-  "platforms": {
-    "json": {
-      "transformGroup": "js",
-      "buildPath": "./assets/library/",
-      "files": [{
-      "destination": "_tokens.json",
-      "format": "json/flat",
-      }]
-    }
-  }
-}
-```
-
-</details>
-
-**3. Export the design tokens with the command `style-dictionary build`**
 
 
 ## Changelog
 
 See [releases][releases].
 This project use [Semantic Versioning][semver].
-
 
 
 
