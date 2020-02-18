@@ -1,3 +1,6 @@
+# Project
+dist/
+
 # Package managers
 node_modules/
 package-lock.json
