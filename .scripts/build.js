@@ -13,7 +13,7 @@ const StyleDictionary = require("style-dictionary").extend({
             }]
         },
         js: {
-        transformGroup: "js",
+        transforms: ["attribute/cti", "name/cti/pascal", "size/rem", "color/css"],
         buildPath: buildPath,
         files: [
             {
