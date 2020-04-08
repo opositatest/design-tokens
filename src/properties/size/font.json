@@ -1,0 +1,68 @@
+{
+    "size": {
+      "text": {
+        "xs" : {
+          "value": 0.75,
+          "comment": "12px - Extra small"
+        },
+        "s": {
+          "value": 0.875,
+          "comment": "14px -Small"
+        },
+        "m" : {
+          "value": 1,
+          "comment": "16px - Medium"
+        },
+        "l" : {
+          "value": 1.375,
+          "comment": "22px - Large"
+        },
+        "xl" : {
+          "value": 2,
+          "comment": "32px - Extra large"
+        },
+        "xxl" : {
+          "value": 2.5,
+          "comment": "40px - Extra extra large"
+        }
+      },
+      "line-height": {
+        "xs" : {
+          "value": 1,
+          "comment": "16px - Extra small"
+        },
+        "s": {
+          "value": 1.5,
+          "comment": "24px - Small"
+        },
+        "m" : {
+          "value": 1.5,
+          "comment": "24px - Medium"
+        },
+        "l" : {
+          "value": 1.5,
+          "comment": "24px - Large"
+        },
+        "l-heading" : {
+          "value": 2,
+          "comment": "32px - Large headings"
+        },
+        "l-blockquote" : {
+          "value": 2.5,
+          "comment": "40px - Large blockquote"
+        },
+        "xl-heading" : {
+          "value": 2.5,
+          "comment": "40px - Extra large"
+        },
+        "xl-blockquote" : {
+          "value": 3,
+          "comment": "48px - Extra large"
+        },
+        "xxl" : {
+          "value": 3.5,
+          "comment": "56px - Extra extra large"
+        }
+      }
+    }
+  }
