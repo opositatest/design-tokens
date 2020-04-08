@@ -1,8 +1,4 @@
-const font = require('../../src/properties/font.json');
-
-test('Exists a main font', () => {
-  expect(font.font.family.main).toBeDefined();
-});
+const font = require('../../../properties/font/weight.json');
 
 
 test('All font weights are numbers', () => {
