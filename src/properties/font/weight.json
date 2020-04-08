@@ -1,8 +1,5 @@
 {
     "font": {
-        "family": {
-            "main": {"value": "'IBM Plex Sans'"}
-        },
         "weight": {
             "light": {"value": 300},
             "text": {"value": 400},
