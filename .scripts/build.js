@@ -4,7 +4,7 @@ const buildPath = "./dist/";
 const StyleDictionary = require("style-dictionary").extend({
     source: ["./src/properties/**/*.json"],
     platforms: {
-        scss: {
+        web: {
             transformGroup: "scss",
             buildPath: buildPath,
             files: [{
@@ -12,15 +12,15 @@ const StyleDictionary = require("style-dictionary").extend({
                 format: "scss/variables"
             }]
         },
-        js: {
-        transforms: ["attribute/cti", "name/cti/pascal", "size/rem", "color/css"],
-        buildPath: buildPath,
-        files: [
-            {
-                destination: "designTokens.js",
-                format: "javascript/es6"
-            },
-        ],
+        app: {
+            transforms: ["attribute/cti", "name/cti/pascal", "size/remToDp", "color/css"],
+            buildPath: buildPath,
+            files: [
+                {
+                    destination: "designTokens.js",
+                    format: "javascript/es6"
+                },
+            ],
         }
     },
 });
