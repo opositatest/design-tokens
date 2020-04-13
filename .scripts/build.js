@@ -14,7 +14,7 @@ const StyleDictionary = require("style-dictionary").extend({
             actions: ["copy_assets"]
         },
         app: {
-            transforms: ["attribute/cti", "name/cti/pascal", "size/remToDp", "color/css"],
+            transforms: ["attribute/cti", "name/cti/pascal", "size/remToDPI", "color/css"],
             buildPath: buildPath,
             files: [
                 {
@@ -26,4 +26,19 @@ const StyleDictionary = require("style-dictionary").extend({
     },
 });
 
+
+// Scales the number by 16
+StyleDictionary.registerTransform({
+    name: 'size/remToDPI',
+    type: 'value',
+    matcher: function(prop) {
+      return prop.attributes.category === 'size';
+    },
+    transformer: function(prop) {
+      return (prop.original.value * 16);
+    }
+});
+
+
+// Build all platforms
 StyleDictionary.buildAllPlatforms();
