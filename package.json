@@ -1,6 +1,6 @@
 {
   "name": "@opositatest/design-tokens",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "description": "OpositaTest design tokens",
   "homepage": "https://github.com/opositatest/design-tokens#readme",
   "bugs": "https://github.com/opositatest/design-tokens/issues",
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "build": "node ./.scripts/build.js",
-    "publish:github": "npm publish --ignore-scripts --@opositatest:registry='https://npm.pkg.github.com'",
+    "publish:github": "npm publish --ignore-scripts --registry='https://npm.pkg.github.com'",
     "prepublishOnly": "npm run test && npm run build",
     "postpublish": "npm run publish:github"
   },
@@ -23,7 +23,7 @@
   "author": "OpositaTest (https://opositatest.com/)",
   "license": "UNLICENSED",
   "devDependencies": {
-    "jest": "^25.3.0",
-    "style-dictionary": "^2.8.3"
+    "jest": "^26.0.1",
+    "style-dictionary": "^2.10.0"
   }
 }
