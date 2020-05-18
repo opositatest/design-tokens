@@ -25,23 +25,22 @@ const designToken = require('@opositatest/design-tokens')
 
 #### Scss:
 
-1. Configure Scss to use files from `node_modules/`
-
-  ```js
-  options: {
-      includePaths: [ 'node_modules/' ]
+1. Configure Sass to import files from `node_modules/`
+    ```js
+    options: {
+        includePaths: [ 'node_modules/' ]
+      }
     }
-  }
-  ```
+    ```
 
-2. Use it in a Scss file
-```scss
-@use '@opositatest/design-tokens/dist/token';
+2. Use it in a Sass file
+    ```scss
+    @use '@opositatest/design-tokens/dist/tokens';
 
-.element {
-color: token.$color-neutral-dark-80;
-}
-```
+    .element {
+      color: tokens.$color-neutral-dark-80;
+    }
+    ```
 
 
 ## Changelog
