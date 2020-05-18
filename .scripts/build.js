@@ -8,7 +8,7 @@ const StyleDictionary = require("style-dictionary").extend({
             transformGroup: "scss",
             buildPath: buildPath,
             files: [{
-                destination: "_token.scss",
+                destination: "_tokens.scss",
                 format: "scss/variables"
             }],
             actions: ["copy_assets"]
