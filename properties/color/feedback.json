@@ -1,8 +1,8 @@
 {
     "color": {
         "feedback": {
-            "success": {"value": "#218C74"},
-            "alerts": {"value": "#F05252"}
+            "success": {"value": "#4BCB0B"},
+            "alerts": {"value": "#FF3D49"}
         }
     }
 }
