@@ -1,7 +1,8 @@
 {
     "color": {
         "secondary": {
-            "vivid-green": {"value": "#B4DA1B"}
+            "vivid-green": {"value": "#B4DA1B"},
+            "ligth-grayish-orange": {"value": "#feefd9"}
         }
     }
 }
