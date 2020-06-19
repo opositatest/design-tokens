@@ -2,7 +2,10 @@
     "color": {
         "feedback": {
             "success": {"value": "#4BCB0B"},
-            "alerts": {"value": "#FF3D49"}
+            "alerts": {"value": "#FF3D49"},
+            "bg-danger": {"value": "#FCDCDC"},
+            "bg-success": {"value": "#DBF5CE"},
+            "bg-alert": {"value": "#FFEFD9"}
         }
     }
 }
