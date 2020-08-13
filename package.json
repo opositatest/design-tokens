@@ -24,6 +24,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "jest": "^26.0.1",
-    "style-dictionary": "^2.10.0"
+    "style-dictionary": "^2.10.0",
+    "svg-parser": "^2.0.4"
   }
 }
