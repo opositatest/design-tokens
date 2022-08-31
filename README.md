@@ -141,6 +141,8 @@ Now you have to go to the releases section of the GitHub´s library page and cre
 
 Draft fields must be filled with this template:
 * Release title: vX.Y.Z, the version commited on the package.json, with an initial *v* character
+* Choose a tag: Leave empty, because tag is not created yet
+* Target: When the PR is merged, we will always work on *main* branch, so leave this field with main branch selected
 * Describe the release: Here you will enum all changes divided in three types *Added, Updated and Removed*
 
   Template for description:
@@ -160,7 +162,7 @@ Draft fields must be filled with this template:
 
 ### 5. Create tag and publish
 
-When the PR is reviewed and merged, you have to create the tag in your local environment. Remember that the tag must be created on the *main* branch updated with latest changes (your merged PR)
+When the PR is reviewed and merged, you have to create the tag in your local environment. Remember that the tag must be created on the *main* branch on your local environment, updated with latest changes (your merged PR)
 
 1. First run:
 
