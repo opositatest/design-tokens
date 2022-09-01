@@ -185,7 +185,23 @@ When the PR is reviewed and merged, you have to create the tag in your local env
     npm publish
     ```
 
-Now the release is created and you can update it in the projects that you are usign Design Tokens library
+Now the release is created and you can update it in the projects that you are using Design Tokens library
+
+### Deploy process summary
+
+1. Make your changes in a branch, commit them and create a PR (don´t forget to update version in the package.json!)
+2. Create the release draft
+3. When the PR is reviewed (by you or another co-worker), merge it
+4. In your local environment, change to main branch and make a git pull to get the latest changes
+5. Follow the process to create the tag in your local
+6. Return to release draft in GitHub, set the recently created tag on the "Choose a tag" drodpdown and click on *Publish release* button
+7. In your local, launch the *npm publish* command
+
+*Considerations:*
+
+* You can use RC versions temporarily on the projects, but when the final release is launched, remember to update on the projects using the RC release
+* You can push directly to main branch the version changes in package.json. For example, if you change from X.Y.Z-rc.W to X.Y.Z only, you don´t have to create a PR for doing that, you can directly push the change to main
+* You can delete RC releases if the final release is launched
 
 ## Changelog
 
