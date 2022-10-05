@@ -3,9 +3,7 @@
         "primary": {
             "main": {"value": "#ffb142"},
             "main-hover": {"value": "#ffc470"},
-            "main-pressed": {"value": "#ffd599"},
-            "dark": {"value": "#ff793f"},
-            "light-dark": {"value": "#ffc6ad"}
+            "main-pressed": {"value": "#ffd599"}
         }
     }
 }

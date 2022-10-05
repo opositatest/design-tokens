@@ -1,0 +1,9 @@
+{
+    "color": {
+        "notifications": {
+            "main": {"value": "#59B3B3"},
+            "light": {"value": "#D3E8E3"},
+            "dark": {"value": "#227093"}
+        }
+    }
+}

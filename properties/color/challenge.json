@@ -1,0 +1,9 @@
+{
+    "color": {
+        "challenge": {
+            "main": {"value": "#6874E8"},
+            "light": {"value": "#DCDEFA"},
+            "dark": {"value": "#1F2FCC"}
+        }
+    }
+}

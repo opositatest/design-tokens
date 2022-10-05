@@ -1,0 +1,9 @@
+{
+    "color": {
+        "questions": {
+            "doubtful": {"value": "#9EBFF7"},
+            "marked": {"value": "#F7C072"},
+            "favourite": {"value": "#EC7D7D"}
+        }
+    }
+}
