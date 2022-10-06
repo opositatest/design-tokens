@@ -203,6 +203,21 @@ Now the release is created and you can update it in the projects that you are us
 * You can push directly to main branch the version changes in package.json. For example, if you change from X.Y.Z-rc.W to X.Y.Z only, you don´t have to create a PR for doing that, you can directly push the change to main
 * You can delete RC releases if the final release is launched
 
+## SVG icons update guide
+
+In this guide we will use the [SVGOMG][svgomg] online converter
+
+1. Copy the source code of the SVG from your preferred editor (like VS Code)
+2. Paste the source code on the left menu option *Paste markup* of SVGOMG site
+3. Once you pasted it, you will be redirected to editor view, there you can see an options bar on the right of the screen. You have to change this settings from default values:
+   1. Style to attributes: activate
+   2. Remove vieBox: deactivate
+   3. Prefer vieBox to width/heigh: activate
+   4. Remove style elements: activate
+   5. Remove script elements: activate
+4. When this changes are applied, you can copy the minified markup by pressing the blue download button on the bottom right zone of the editor
+5. Paste the markup on your editor, and change the classes and color as pointed on [2.1 Add/update icon](#2-1-add-update-icon) section
+
 ## Changelog
 
 See [releases][releases].
@@ -212,3 +227,4 @@ This project use [Semantic Versioning][semver].
 [releases]: https://github.com/opositatest/design-tokens/releases
 [semver]: https://semver.org/
 [repo]: https://github.com/opositatest/design-tokens
+[svgomg]: https://jakearchibald.github.io/svgomg/
