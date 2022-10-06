@@ -215,8 +215,12 @@ In this guide we will use the [SVGOMG][svgomg] online converter
    3. Prefer vieBox to width/heigh: activate
    4. Remove style elements: activate
    5. Remove script elements: activate
-4. When this changes are applied, you can copy the minified markup by pressing the blue download button on the bottom right zone of the editor
-5. Paste the markup on your editor, and change the classes and color as pointed on [2.1 Add/update icon](#2-1-add-update-icon) section
+4. When this changes are applied, you can copy the minified markup by pressing the copy button or download by pressing the blue download button. Both are on the bottom right zone of the editor
+5. Paste the markup on your editor, and change the classes and color as pointed on [2.1 Add/update icon](#2-1-add-update-icon) sectionç
+
+*VSCode Extension*
+
+If you use VSCode, I recommend this [extension][svgextension] to work with the SVG icons. It has autocompletion and a preview/editor where you can see if the icon is correctly visualized after minifcation, and you can see what colors are you changing when you are setting the *currentColor* on node fills
 
 ## Changelog
 
@@ -228,3 +232,4 @@ This project use [Semantic Versioning][semver].
 [semver]: https://semver.org/
 [repo]: https://github.com/opositatest/design-tokens
 [svgomg]: https://jakearchibald.github.io/svgomg/
+[svgextension]: https://marketplace.visualstudio.com/items?itemName=jock.svg
