@@ -77,6 +77,7 @@ In this library, you can make two types of changes, icons and style tokens
 #### 2.1 Add/update icon
 
 The icons are on path */assets/icons*, with sub-folders for each type:
+
 * *brand*: OpositaTest branding icons
 * *categories*: opposition category icons
 * *exam-type*: the icon for the different test types
@@ -85,12 +86,29 @@ The icons are on path */assets/icons*, with sub-folders for each type:
 * *social*: social networks logos
 * On the root folder, are icons that didn´t match in any subfolder (this icons will be correctly categorized on next releases)
 
-When you want to add or update an icon, you have to follow this considerations
+When you are adding or updating icons, you hace to optimize them to remove useless nodes added by Figma and change HEX colors that are susceptible to change by CSS. For doing this, you have two options, using the automated script or doing it manually
+
+#### 2.1.1 By script
+
+1. Place the icon in its corresponding folder and with its final name
+2. In the CLI, launch this command:
+
+```shell
+npm run minify:svg
+```
+
+3. The icon/s will be minified, added the class name and hexadecimal colors replaced by "currentColor" to allow to be changed by CSS
+4. Review all the icons changed, the script is not infallible and could break the SVG. In this case, you have to update the SVG manually
+
+#### 2.1.2 Manually
+
+When you want to add or update an icon manually, you have to follow this considerations
+
 1. Optimize the SVG: always try to optimize the svg icon to reduce size and avoid redundant svg nodes. You can use any software or service, but always remebeber to check if generated svg is correctly visualized on any browser
 2. Add classes on the main *svg* tag: when you add or update an icon, you always have to add two classes, one named *Icon* and another named *Icon-\*filename\** (**filename\** must be replaced with the svg pyshical file name without extension)
 
     *NOTE:* in the opposition category icons, the second class name is different, it follows this pattern: *Icon-cat-*filename\**. The file name will be the same as the opposition category slug
-3. Replace colors: last step is to replace the color paths in the svg file. You have to replace the hexadecimal color with the literal *currentColor* that can be overrided by CSS. 
+3. Replace colors: last step is to replace the color paths in the svg file. You have to replace the hexadecimal color with the literal *currentColor* that can be overrided by CSS.
 
    For example, this svg:
 
@@ -203,7 +221,7 @@ Now the release is created and you can update it in the projects that you are us
 * You can push directly to main branch the version changes in package.json. For example, if you change from X.Y.Z-rc.W to X.Y.Z only, you don´t have to create a PR for doing that, you can directly push the change to main
 * You can delete RC releases if the final release is launched
 
-## SVG icons update guide
+## SVG icons update guide (manually)
 
 In this guide we will use the [SVGOMG][svgomg] online converter
 
@@ -211,8 +229,8 @@ In this guide we will use the [SVGOMG][svgomg] online converter
 2. Paste the source code on the left menu option *Paste markup* of SVGOMG site
 3. Once you pasted it, you will be redirected to editor view, there you can see an options bar on the right of the screen. You have to change this settings from default values:
    1. Style to attributes: activate
-   2. Remove vieBox: deactivate
-   3. Prefer vieBox to width/heigh: activate
+   2. Remove viewBox: deactivate
+   3. Prefer viewBox to width/heigh: activate
    4. Remove style elements: activate
    5. Remove script elements: activate
 4. When this changes are applied, you can copy the minified markup by pressing the copy button or download by pressing the blue download button. Both are on the bottom right zone of the editor

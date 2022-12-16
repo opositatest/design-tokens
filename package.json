@@ -1,30 +1,34 @@
 {
-  "name": "@opositatest/design-tokens",
-  "version": "2.6.0",
-  "description": "OpositaTest design tokens",
-  "homepage": "https://github.com/opositatest/design-tokens#readme",
-  "bugs": "https://github.com/opositatest/design-tokens/issues",
-  "repository": "https://github.com/opositatest/design-tokens",
-  "files": [
-    "dist/"
-  ],
-  "main": "dist/designTokens.js",
-  "scripts": {
-    "test": "jest",
-    "build": "node ./.scripts/build.js",
-    "publish:github": "npm publish --ignore-scripts --registry='https://npm.pkg.github.com'",
-    "prepublishOnly": "npm run test && npm run build",
-    "postpublish": "npm run publish:github"
-  },
-  "keywords": [
-    "design-tokens",
-    "style-dictionary"
-  ],
-  "author": "OpositaTest (https://opositatest.com/)",
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "jest": "^26.6.3",
-    "style-dictionary": "^2.10.2",
-    "svg-parser": "^2.0.4"
-  }
+    "name": "@opositatest/design-tokens",
+    "version": "2.6.0",
+    "description": "OpositaTest design tokens",
+    "homepage": "https://github.com/opositatest/design-tokens#readme",
+    "bugs": "https://github.com/opositatest/design-tokens/issues",
+    "repository": "https://github.com/opositatest/design-tokens",
+    "files": [
+        "dist/"
+    ],
+    "main": "dist/designTokens.js",
+    "scripts": {
+        "test": "jest",
+        "task-minify": "node ./.scripts/svg.js",
+        "minify:svg": "npm run task-minify && npm run task-minify",
+        "build": "node ./.scripts/build.js",
+        "publish:github": "npm publish --ignore-scripts --registry='https://npm.pkg.github.com'",
+        "prepublishOnly": "npm run test && npm run build",
+        "postpublish": "npm run publish:github"
+    },
+    "keywords": [
+        "design-tokens",
+        "style-dictionary"
+    ],
+    "author": "OpositaTest (https://opositatest.com/)",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "jest": "^26.6.3",
+        "style-dictionary": "^2.10.2",
+        "svg-parser": "^2.0.4",
+        "svgo": "^3.0.2",
+        "svgson": "^5.2.1"
+    }
 }
