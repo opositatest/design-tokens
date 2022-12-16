@@ -11,7 +11,8 @@
     "main": "dist/designTokens.js",
     "scripts": {
         "test": "jest",
-        "minify:svg": "node ./.scripts/svg.js",
+        "task-minify": "node ./.scripts/svg.js",
+        "minify:svg": "npm run task-minify && npm run task-minify",
         "build": "node ./.scripts/build.js",
         "publish:github": "npm publish --ignore-scripts --registry='https://npm.pkg.github.com'",
         "prepublishOnly": "npm run test && npm run build",
