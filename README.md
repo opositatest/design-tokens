@@ -7,6 +7,60 @@ The JSONs in this repository are formatted according to the [Style Dictionary][s
 * [Style Dictionary][sd]
 * [opositatest/design-tokens][repo]
 
+## Deprecated colors variables
+
+In some colors group, we have new and deprecated variables. We need to keep deprecated variables because variables name have been changed and this can break the projects styles.
+
+```
+{
+    "color": {
+        "primary": {
+            "main": {"value": "#ffb142"},
+            "main-hover": {"value": "#ffc470"},
+            "main-pressed": {"value": "#ffd599"},
+            // deprecated
+            "dark": {"value": "#ff793f"},
+            "light-dark": {"value": "#ffc6ad"}
+        }
+    }
+}
+```
+
+We have to change this old variables for the new little by little.
+
+Actually, to use secondary color we use: ``` color: tokens.$color-primary-dark; ```
+Now, whit new structure of colors, we have to use: ``` color: tokens.$color-secondary-main; ```
+
+### Feedback
+
+```
+"bg-alert": {"value": "#FFEFEF"}
+```
+
+### Neutral
+
+```
+"opacity-80": {"value": "rgba(56, 54, 65, 0.8)"},
+"opacity-60": {"value": "rgba(56, 54, 65, 0.6)"},
+"opacity-40": {"value": "rgba(56, 54, 65, 0.4)"},
+"opacity-20": {"value": "rgba(56, 54, 65, 0.2)"},
+"opacity-10": {"value": "rgba(56, 54, 65, 0.1)"}
+```
+
+### Primary
+
+```
+"dark": {"value": "#ff793f"},
+"light-dark": {"value": "#ffc6ad"}
+```
+
+### Secondary
+
+```
+"vivid-green": {"value": "#B4DA1B"},
+"light-orange": {"value": "#FFD390"}
+```
+
 ## Getting started
 
 ### 1. Install the npm package
