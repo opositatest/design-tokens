@@ -2,7 +2,9 @@
     "color": {
         "secondary": {
             "main": {"value": "#FF793F"},
-            "light": {"value": "#FFC6AD"}
+            "light": {"value": "#FFC6AD"},
+            "vivid-green": {"value": "#B4DA1B"},
+            "light-orange": {"value": "#FFD390"}
         }
     }
 }

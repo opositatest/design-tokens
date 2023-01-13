@@ -5,7 +5,8 @@
             "bg-success": {"value": "#EDFAE7"},
             "alerts": {"value": "#FF3D49"},
             "bg-alerts": {"value": "#FFEFEF"},
-            "bg-danger": {"value": "#FCDCDC"}
+            "bg-danger": {"value": "#FCDCDC"},
+            "bg-alert": {"value": "#FFEFEF"}
         }
     }
 }
