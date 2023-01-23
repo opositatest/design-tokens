@@ -1,6 +1,6 @@
 {
     "name": "@opositatest/design-tokens",
-    "version": "2.6.1",
+    "version": "2.6.2",
     "description": "OpositaTest design tokens",
     "homepage": "https://github.com/opositatest/design-tokens#readme",
     "bugs": "https://github.com/opositatest/design-tokens/issues",
@@ -11,8 +11,7 @@
     "main": "dist/designTokens.js",
     "scripts": {
         "test": "jest",
-        "task-minify": "node ./.scripts/svg.js",
-        "minify:svg": "npm run task-minify && npm run task-minify",
+        "minify:svg": "node ./.scripts/svg.js",
         "build": "node ./.scripts/build.js",
         "publish:github": "npm publish --ignore-scripts --registry='https://npm.pkg.github.com'",
         "prepublishOnly": "npm run test && npm run build",
