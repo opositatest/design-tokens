@@ -135,6 +135,7 @@ The icons are on path */assets/icons*, with sub-folders for each type:
 * *brand*: OpositaTest branding icons
 * *categories*: opposition category icons
 * *exam-type*: the icon for the different test types
+* *ilustrations*: decorative images
 * *lib*: these are the utility/actions icons
 * *payment*: payment methods logos
 * *social*: social networks logos
