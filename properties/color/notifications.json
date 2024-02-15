@@ -2,6 +2,7 @@
     "color": {
         "notifications": {
             "main": {"value": "#59B3B3"},
+            "hover": {"value": "#88CBCA"},
             "light": {"value": "#D3E8E3"},
             "dark": {"value": "#227093"}
         }
