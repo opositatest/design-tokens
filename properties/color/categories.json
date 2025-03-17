@@ -1,0 +1,90 @@
+{
+    "color": {
+        "categories": {
+            "abogacia": {
+                "value": "#3a7ea1"
+            },
+            "administracion-general": {
+                "value": "#df3333"
+            },
+            "corporaciones-locales": {
+                "value": "#827717"
+            },
+            "bibliotecas": {
+                "value": "#607d8b"
+            },
+            "cortes-generales": {
+                "value": "#d53f3f"
+            },
+            "comunidades-autonomas": {
+                "value": "#358470"
+            },
+            "correos": {
+                "value": "#b2830d"
+            },
+            "emt": {
+                "value": "#4354c4"
+            },
+            "ejercito": {
+                "value": "#7d5446"
+            },
+            "fcs": {
+                "value": "#5e6be2"
+            },
+            "gestores-administrativos": {
+                "value": "#b142dd"
+            },
+            "hacienda": {
+                "value": "#c94586"
+            },
+            "interior": {
+                "value": "#b46033"
+            },
+            "jueces-fiscales": {
+                "value": "#d17a00"
+            },
+            "justicia": {
+                "value": "#e65100"
+            },
+            "medioambiente": {
+                "value": "#558332"
+            },
+            "psicotecnicos": {
+                "value": "#d5377c"
+            },
+            "sanidad-celadores": {
+                "value": "#378282"
+            },
+            "sanidad-auxiliares-enfermeria": {
+                "value": "#378282"
+            },
+            "sanidad-cuerpos-administrativos": {
+                "value": "#378282"
+            },
+            "sanidad-otras": {
+                "value": "#378282"
+            },
+            "sanidad-legislacion": {
+                "value": "#378282"
+            },
+            "seguridad-social": {
+                "value": "#008cb4"
+            },
+            "test-legislacion": {
+                "value": "#895ce2"
+            },
+            "universidades": {
+                "value": "#dd55e0"
+            },
+            "informatica-y-ofimatica": {
+                "value": "#0288d1"
+            },
+            "default": {
+                "value": "#777777"
+            },
+            "formacion-transversal": {
+                "value": "#3d79bd"
+            }
+        }
+    }
+}
