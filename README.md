@@ -124,6 +124,15 @@ You have to be logged in your CLI in GitHub and in NPM
 
 Also, yoy can check [Authenticating to GitHub packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages) in GitHub documentation.
 
+### Publishing authentication
+
+Publishing is always done **manually from a maintainer's machine**. This repository has no CI workflow that publishes and no `NPM_TOKEN` secret.
+
+* **npmjs** (`npm publish`): authenticated with an interactive session (`npm adduser` / `npm login`) that asks for the 2FA code. It does not use a token that bypasses 2FA, so it is **not affected** by npm's restriction on those tokens (account changes in Aug 2026, direct publishing in Jan 2027). This flow remains valid and nothing needs to be migrated.
+* **GitHub Packages**: the `postpublish` script runs `npm run publish:github` right after publishing to npmjs, using the CLI login with a personal access token (`write:packages`). It is not affected either.
+
+*IMPORTANT:* do not publish with a granular or classic access token that bypasses 2FA (for example one stored in a local `.npmrc`): from Jan 2027 npm will only let it *stage* the version for manual approval. If publishing is ever automated in CI, use npm trusted publishing (OIDC) as in `opositatest/opo-markdown-input` instead of a token.
+
 ### 2. Changes
 
 In this library, you can make two types of changes, icons and style tokens
